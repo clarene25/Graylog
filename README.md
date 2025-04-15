@@ -22,14 +22,14 @@ Steps to configure your linux clients to send syslog information to Graylog
 <br />
 <br />
    <p align="left">
-1. Add port or ports to the firewall<br />
+1. add port or ports to the firewall<br />
   <br />
   -	a. firewall-cmd --zone public --add-port 5140/udp --permanent
   <br />
   - b. firewall-cmd --reload
 <br/>
 <br/>
-2. Now that Graylog is accepting syslog information, we need to configure our clients to send the information. To do that, SSH into a different Linux server (one you want to have send syslog details to Graylog) and create a new rsyslog configuration file<br />
+2. now that Graylog is accepting syslog information, we need to configure our clients to send the information. To do that, SSH into a different Linux server (one you want to have send syslog details to Graylog) and create a new rsyslog configuration file<br />
 <br />
 - a. vi /etc/rsyslog.d/90-graylog.conf<br />
  <br />
